@@ -1,0 +1,11 @@
+# Ghost Meeting — Python Dependencies
+# ====================================
+
+# Person 2 (Nishad) — FastAPI + WebSocket + Whisper
+fastapi
+uvicorn[standard]
+websockets
+openai-whisper
+
+# Person 3 (Shreya) — AI Logic & Ollama Integration
+httpx
