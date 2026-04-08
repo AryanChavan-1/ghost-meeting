@@ -1,0 +1,113 @@
+#ghost-meeting-widget {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 320px;
+    height: 400px;
+    background: rgba(22, 33, 62, 0.95);
+    backdrop-filter: blur(10px);
+    border: 1px solid #e94560;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    z-index: 999999;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    color: #ffffff;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+}
+
+#ghost-meeting-widget:hover {
+    box-shadow: 0 15px 40px rgba(233, 69, 96, 0.2);
+}
+
+.gm-header {
+    background: #0f3460;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: move;
+    border-bottom: 1px solid #2a2a4a;
+    user-select: none;
+}
+
+.gm-logo {
+    font-weight: 600;
+    font-size: 14px;
+    color: #e94560;
+}
+
+.gm-drag-handle {
+    color: #a0a0a0;
+    font-size: 18px;
+}
+
+.gm-content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    overflow: hidden;
+}
+
+.gm-section {
+    padding: 15px;
+    overflow-y: auto;
+}
+
+.gm-transcript {
+    flex-grow: 1;
+    max-height: 200px;
+}
+
+.gm-transcript-line {
+    margin-bottom: 8px;
+    font-size: 13px;
+    line-height: 1.4;
+    color: #e0e0e0;
+}
+
+.gm-placeholder {
+    color: #6c757d;
+    font-style: italic;
+    font-size: 13px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.gm-divider {
+    height: 1px;
+    background: #2a2a4a;
+    margin: 0 15px;
+}
+
+.gm-actions {
+    background: rgba(15, 52, 96, 0.4);
+    height: 150px;
+    border-top: 1px solid rgba(233, 69, 96, 0.2);
+}
+
+.gm-section-title {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    color: #e94560;
+    margin-bottom: 10px;
+}
+
+.gm-actions-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.gm-action-item {
+    background: rgba(233, 69, 96, 0.1);
+    border-left: 3px solid #e94560;
+    padding: 8px 10px;
+    margin-bottom: 8px;
+    font-size: 13px;
+    border-radius: 4px;
+}
